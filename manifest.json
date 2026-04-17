@@ -1,0 +1,17 @@
+{
+  "name": "Google Place ID Finder",
+  "description": "Extracts Google Place IDs from Search and Maps pages.",
+  "version": "1.0",
+  "manifest_version": 3,
+  "permissions": ["scripting"],
+  "content_scripts": [
+    {
+      "matches": [
+        "https://www.google.com/search*",
+        "https://www.google.com/maps/*"
+      ],
+      "js": ["content.js"],
+      "run_at": "document_end"
+    }
+  ]
+}
