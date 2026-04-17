@@ -1,0 +1,137 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Privacy Policy for Place ID finder</title>
+  <meta name="description" content="Privacy Policy for the Place ID finder Chrome extension.">
+  <style>
+    :root {
+      color-scheme: light;
+      --bg: #f7f8fa;
+      --card: rgba(255, 255, 255, 0.9);
+      --text: #202124;
+      --muted: #5f6368;
+      --border: rgba(60, 64, 67, 0.14);
+      --shadow: 0 18px 40px rgba(60, 64, 67, 0.12);
+      --accent: #1a73e8;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      line-height: 1.6;
+      color: var(--text);
+      background:
+        radial-gradient(circle at top left, rgba(26, 115, 232, 0.08), transparent 28%),
+        radial-gradient(circle at top right, rgba(15, 157, 88, 0.08), transparent 22%),
+        var(--bg);
+    }
+
+    main {
+      width: min(820px, calc(100vw - 32px));
+      margin: 48px auto;
+      padding: 32px;
+      background: var(--card);
+      border: 1px solid var(--border);
+      border-radius: 20px;
+      box-shadow: var(--shadow);
+      backdrop-filter: blur(10px);
+    }
+
+    h1 {
+      margin: 0 0 8px;
+      font-size: clamp(2rem, 5vw, 2.6rem);
+      line-height: 1.15;
+    }
+
+    h2 {
+      margin: 32px 0 10px;
+      font-size: 1.15rem;
+    }
+
+    p {
+      margin: 0 0 14px;
+    }
+
+    ul {
+      margin: 0 0 14px 20px;
+      padding: 0;
+    }
+
+    li + li {
+      margin-top: 6px;
+    }
+
+    .eyebrow {
+      margin-bottom: 14px;
+      font-size: 0.95rem;
+      color: var(--muted);
+    }
+
+    .contact {
+      display: inline-block;
+      color: var(--accent);
+      text-decoration: none;
+      font-weight: 600;
+    }
+
+    .contact:hover,
+    .contact:focus-visible {
+      text-decoration: underline;
+    }
+
+    @media (max-width: 640px) {
+      main {
+        margin: 20px auto;
+        padding: 22px 18px;
+        border-radius: 16px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <h1>Privacy Policy for Place ID finder</h1>
+    <p class="eyebrow">Last updated: April 17, 2026</p>
+
+    <p>Place ID finder reads the content of supported Search, Maps, and Travel pages automatically when those supported pages load in the browser.</p>
+
+    <h2>What the extension does</h2>
+    <p>The extension scans the current supported page to extract visible place ID values, displays the result to the user on that page, and lets the user copy the extracted value.</p>
+
+    <h2>Data the extension accesses</h2>
+    <p>The extension may access:</p>
+    <ul>
+      <li>The current page URL on supported pages</li>
+      <li>The HTML content of the current supported page</li>
+      <li>Place ID values found on that page</li>
+    </ul>
+
+    <h2>How data is used</h2>
+    <p>The extension uses page content only to extract and display place IDs for the current page.</p>
+
+    <h2>Data storage</h2>
+    <p>The extension does not store extracted place IDs, browsing history, or page content after the extraction is complete.</p>
+
+    <h2>Data sharing</h2>
+    <p>The extension does not send, sell, or share page content, place IDs, or browsing data with the developer or any third parties.</p>
+
+    <h2>Remote code and external services</h2>
+    <p>The extension does not execute remote code and does not rely on external servers to perform place ID extraction.</p>
+
+    <h2>User controls</h2>
+    <p>The extension runs automatically only on the supported page URLs declared in the extension manifest. It does not run on unrelated websites.</p>
+
+    <h2>Contact</h2>
+    <p>Email: <a class="contact" href="mailto:jensakhiya@gmail.com">jensakhiya@gmail.com</a></p>
+
+    <h2>Chrome Web Store Limited Use disclosure</h2>
+    <p>The use of information received from Google APIs will adhere to the Chrome Web Store User Data Policy, including the Limited Use requirements.</p>
+  </main>
+</body>
+</html>
