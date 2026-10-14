@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <style>
+        body {
+            margin: 0;
+            width: 340px;
+        }
+
+        /* The widget card, adapted to fill the popup instead of floating on the page. */
+        .card.popup {
+            position: static;
+            width: 100%;
+            max-width: none;
+            border-radius: 0;
+            box-shadow: none;
+            padding: 16px;
+            visibility: hidden;
+        }
+
+        .card.popup.ready {
+            visibility: visible;
+        }
+    </style>
+</head>
+<body>
+    <div class="card popup" id="card" data-theme="classic">
+        <div class="heading">Place ID finder</div>
+        <form class="panel" id="go-form">
+            <label class="label" for="place-id">Place ID</label>
+            <div class="row">
+                <input class="field mono" id="place-id" type="text" placeholder="Paste a place ID" spellcheck="false" autocomplete="off" autofocus>
+                <button class="btn primary tall" type="submit">Go</button>
+            </div>
+            <div class="error" id="error" aria-live="polite"></div>
+        </form>
+    </div>
+    <script src="place-id-utils.js"></script>
+    <script src="widget-styles.js"></script>
+    <script src="popup.js"></script>
+</body>
+</html>

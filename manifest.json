@@ -1,16 +1,20 @@
 {
   "name": "Place ID finder",
-  "description": "Extracts and copies place IDs from supported Search, Maps, and Travel pages.",
-  "version": "1.3.2",
+  "description": "Find, copy and open Google place IDs on supported Search and Travel pages.",
+  "version": "1.4.0",
   "manifest_version": 3,
+  "action": {
+    "default_title": "Place ID finder",
+    "default_popup": "popup.html"
+  },
+  "permissions": ["storage"],
   "content_scripts": [
     {
       "matches": [
         "https://www.google.com/search*",
-        "https://www.google.com/maps/*",
         "https://www.google.com/travel/*"
       ],
-      "js": ["content.js"],
+      "js": ["place-id-utils.js", "widget-styles.js", "content.js"],
       "run_at": "document_end"
     }
   ],
